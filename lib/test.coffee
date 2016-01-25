@@ -106,6 +106,7 @@ class Test
         #{JSON.stringify(json, null, 4)}
         Error
       """
+      assert.equal result.missing.length, 0, "Missing schemas: " + result.missing.join(", ")
 
       # Update @response
       @response.body = json
