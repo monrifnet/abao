@@ -3,6 +3,7 @@ request = require 'request'
 _ = require 'underscore'
 async = require 'async'
 tv4 = require 'tv4'
+formats = require 'tv4-formats'
 fs = require 'fs'
 glob = require 'glob'
 
