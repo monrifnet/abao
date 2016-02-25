@@ -105,7 +105,7 @@ class Test
       assert.ok result.valid, """
         Got unexpected response body:
         #{JSON.stringify(json, null, 4)}
-        Error
+        Error #{result.error?.message}
       """
       assert.equal result.missing.length, 0, "Missing schemas: " + result.missing.join(", ")
 
